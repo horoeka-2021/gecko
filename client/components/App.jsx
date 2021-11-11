@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { gecko } from '../api'
-import Coin from './Coin'
+// import Coin from './Coin'
+import Trending from './Trending'
 
 function App () {
   const [geckoState, setGecko] = useState('')
@@ -22,7 +23,7 @@ function App () {
     <>
       <h2>Gecko says: {geckoState}</h2>
       {/* <p>{coins.name}</p> */}
-      <Coin />
+      <Trending/>
       {/* <p>Bitcoin Price: ${coinPrice}</p> */}
     </>
   )
