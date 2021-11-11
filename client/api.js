@@ -1,22 +1,24 @@
 import request from 'superagent'
 
-const geckoURL = 'https://api.coingecko.com/api/v3/'
-
-// ping gecko api
+// this calls the ping gecko api from our server
 export function gecko () {
   return request
-    .get(`${geckoURL}/ping`)
-    .then(response => response.body)
+    .get('/coinGecko/ping')
+    .then(response => {
+      return response.body
+    })
 }
 
-// list all coins gecko api supports
-export function getGeckoCoins () {
+// this function calls the trending coins api from our server
+export function getTrending () {
   return request
-    .get(`${geckoURL}/coins/list`)
-    .then(response => response.body)
+    .get('/coinGecko/trending')
+    .then(response => {
+      return response.body
+    })
 }
 
-// this function gets an api from our server
+// this function calls and gets a specific coins info from the api from our server
 export function getCoinInfo (id) {
   return request
     .get(`/coinGecko/${id}`)
