@@ -4,10 +4,6 @@ export default function Trending () {
   const [data, setData] = useState({ coins: [] })
   //   console.log(data)
 
-  function hide (e) {
-    const btn = e.target.className
-  }
-
   function handleClicked () {
     getTrending()
       .then(ele => {
