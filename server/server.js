@@ -1,15 +1,15 @@
 const path = require('path')
 const express = require('express')
 const coinGecko = require('./routes/coinGecko')
-const welcome = require('./routes/welcome')
 
 const server = express()
 
 server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 
-server.use('/api/v1/welcome', welcome)
-
 server.use('/coinGecko', coinGecko)
+
+// https://api.coingecko.com/api/v3/search/trending
+// server.use('/api/v3/search/trending', trending)
 
 module.exports = server
