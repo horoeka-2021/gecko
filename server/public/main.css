@@ -1,0 +1,16 @@
+.bullsEye {
+    width: 75vh;
+    height: 75vh;
+    background-color: brown;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.trend-btn{
+    width: 35vh;
+    height: 35vh;
+    background-color: blue;
+    border-radius: 50%;
+}
