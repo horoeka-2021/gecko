@@ -52,11 +52,19 @@ img:hover{
 .home-btn{
     text-decoration: none;
     color: rgb(179, 81, 138);
+    font-size: 3rem;
 }
 
 .expand-btn{
     text-decoration: none;
     color: rgba(63,94,251,1);
+    font-size: 3rem;
+}
+
+.moreInfo{
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title{

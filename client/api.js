@@ -23,6 +23,6 @@ export function getCoinInfo (id) {
   return request
     .get(`/coinGecko/${id}`)
     .then(response => {
-      return response.body.output
+      return response.body
     })
 }
