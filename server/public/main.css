@@ -65,6 +65,11 @@ img:hover{
     width: 40rem;
     margin-left: auto;
     margin-right: auto;
+    font-size: 2rem;
+}
+
+.coinDets{
+    font-size: 1.5rem;
 }
 
 .title{
