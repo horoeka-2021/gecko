@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { getCoinInfo } from '../api'
 
 export default function ExpandInfo () {
@@ -15,12 +15,11 @@ export default function ExpandInfo () {
         setcoinData(coin)
         return null
       })
-      .catch(err => {
-        res.status(500).json({ errorEpanded: err.message })
-      })
+      .catch(err => console.error(err))
   }, [])
 
   return (
-    <h1>{coinData.description.en}</h1>
+    <p className='moreInfo'>{coinData.description.en}</p>
+    // <h1>hello world</h1>
   )
 }

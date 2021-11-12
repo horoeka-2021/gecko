@@ -1,13 +1,13 @@
 import request from 'superagent'
 
 // this calls the ping gecko api from our server
-export function gecko () {
-  return request
-    .get('/coinGecko/ping')
-    .then(response => {
-      return response.body
-    })
-}
+// export function gecko () {
+//   return request
+//     .get('/coinGecko/ping')
+//     .then(response => {
+//       return response.body
+//     })
+// }
 
 // this function calls the trending coins api from our server
 export function getTrending () {
@@ -23,6 +23,6 @@ export function getCoinInfo (id) {
   return request
     .get(`/coinGecko/${id}`)
     .then(response => {
-      return response.body
+      return response.body.output
     })
 }
