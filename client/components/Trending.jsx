@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { getTrending } from '../api'
 export default function Trending () {
   const [data, setData] = useState({ coins: [] })
@@ -18,9 +19,9 @@ export default function Trending () {
     <div className='bullsEye'>
       {data.coins.map(ele => {
         return (
-          <div key={ele.item.coin_id}>
+          <Link to={`/${ele.item.id}`} key={ele.item.coin_id}>
             <img src={ele.item.large} alt={ele.item.name}></img>
-          </div>
+          </Link>
         )
       })}
       <div className='trend-btn' onClick={handleClicked}></div>

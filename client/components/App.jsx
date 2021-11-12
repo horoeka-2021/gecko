@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { Route } from 'react-router-dom'
 import { gecko } from '../api'
-// import Coin from './Coin'
+
 import Trending from './Trending'
+import CoinInfo from './CoinInfo'
 
 function App () {
   const [geckoState, setGecko] = useState('')
@@ -21,10 +23,9 @@ function App () {
 
   return (
     <>
-      <h2>Gecko says: {geckoState}</h2>
-      {/* <p>{coins.name}</p> */}
-      <Trending/>
-      {/* <p>Bitcoin Price: ${coinPrice}</p> */}
+      <h2>{geckoState}</h2>
+      <Route path='/' exact component={Trending} />
+      <Route path='/:id' component={CoinInfo} />
     </>
   )
 }
