@@ -43,14 +43,13 @@ export default function CoinInfo () {
   return (
     <div className='bullsEye'>
       <div className='coinInfo'>
-        <h1>hello</h1>
         <img src={coinData.item.large} alt={coinData.item.name}></img>
         <h3>{coinData.item.name}({coinData.item.symbol})</h3>
         <p>Market Cap: {coinData.item.market_cap_rank}</p>
         <p>Price in Bitcoin: {coinData.item.price_btc}</p>
+        <Link to="/" className='home-btn'>Back to Trending</Link>
+        <Link to={`/${id}/info`} className='expand-btn'>More Info</Link>
       </div>
-      <Link to="/" className='home-btn'>Back to Trending</Link>
-      <Link to={`/${id}/info`} className='expand-btn'>More Info</Link>
     </div>
   )
 }

@@ -22,16 +22,41 @@ body{
     background: rgb(115,40,119);
     background: radial-gradient(circle, rgba(115,40,119,1) 0%, rgba(63,94,251,1) 100%);
     border-radius: 50%;
-    z-index: 2;
+    z-index: 1;
+
+    transition: 0.5s ease-out;
+    transform: scale(1);
 }
 
+.trend-btn:hover{
+    z-index: 2;
+    cursor: pointer;
 
-
+    transform: scale(1.11);
+    transition: 0.8s ease-in-out;
+}
 img{
     width: 10vh;
     height: 10vh;
     border-radius: 50%;
     margin: 10px;
+    transition: 0.5s ease-out;
+    transform: scale(1);
+}
+
+img:hover{
+    transform: scale(1.11);
+    transition: 0.8s ease-in-out;
+}
+
+.home-btn{
+    text-decoration: none;
+    color: rgb(179, 81, 138);
+}
+
+.expand-btn{
+    text-decoration: none;
+    color: rgba(63,94,251,1);
 }
 
 .title{
@@ -42,7 +67,7 @@ img{
     text-shadow: 1rem 0 0 white,0 1rem 0 white,-1rem 0 0 white,0 -1rem 0 white;
     font-weight: lighter;
     opacity: 0.5;
-    z-index: 1;
+    z-index: 2;
     
 }
 .ring2{
