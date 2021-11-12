@@ -1,0 +1,102 @@
+
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.bullsEye {
+    width: 90vh;
+    height: 90vh;
+    background: rgb(115,40,119);
+    background: radial-gradient(circle, rgba(115,40,119,1) 0%, rgba(63,94,251,1) 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+}
+.trend-btn{
+    width: 30vh;
+    height: 30vh;
+    background: rgb(115,40,119);
+    background: radial-gradient(circle, rgba(115,40,119,1) 0%, rgba(63,94,251,1) 100%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+
+img{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.title{
+    text-align: center;
+    position: fixed;
+    font-family: 'Press Start 2P';
+    font-size: 15rem;
+    text-shadow: 1rem 0 0 white,0 1rem 0 white,-1rem 0 0 white,0 -1rem 0 white;
+    font-weight: lighter;
+    opacity: 0.5;
+    z-index: 1;
+    
+}
+.ring2{
+    width: 60vh;
+    height: 60vh;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+}
+/* * 
+{
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  #app {
+    width: 75vh;
+    height: 75vh;
+    margin: auto;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    background: #888080;
+  }
+
+  .canvas{
+    border-radius: 50%;
+  }
+  .btn{
+    display: block;
+    margin: auto;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
+      segoe ui, arial, sans-serif;
+    text-align: center;
+  }
+
+*/
