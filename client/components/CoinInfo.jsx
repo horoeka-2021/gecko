@@ -50,6 +50,7 @@ export default function CoinInfo () {
         <p>Price in Bitcoin: {coinData.item.price_btc}</p>
       </div>
       <Link to="/" className='home-btn'>Back to Trending</Link>
+      <Link to={`/${id}/info`} className='expand-btn'>More Info</Link>
     </div>
   )
 }
