@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate-react-webpack",
+  "name": "coinGun",
   "version": "0.2.2",
-  "description": "Consuming External APIs",
-  "repository": "https://github.com/dev-academy-challenges/consuming-external-apis.git",
+  "description": "Consuming External APIs and firing info bullets on crypto",
+  "repository": "https://github.com/horoeka-2021/gecko",
   "main": "server/index.js",
-  "author": "EDA",
+  "author": "team coinGun",
   "license": "ISC",
   "scripts": {
     "client": "webpack serve --hot --config ./client/webpack.config.js",
@@ -34,6 +34,9 @@
       "bundle.js"
     ]
   },
+  "engines": {
+    "node": "16.13.0"
+  },
   "dependencies": {
     "@react-three/cannon": "^2.5.0",
     "@react-three/drei": "^7.20.5",
@@ -41,9 +44,7 @@
     "express": "^4.17.1",
     "npm-run-all": "^4.1.5",
     "superagent": "^5.2.2",
-    "three": "^0.134.0"
-  },
-  "devDependencies": {
+    "three": "^0.134.0",
     "@babel/core": "^7.10.2",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
